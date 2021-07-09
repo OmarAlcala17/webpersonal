@@ -1,0 +1,730 @@
+/ *! normalize.css v8.0.1 | Licencia MIT | github.com/necolas/normalize.css * /
+
+/ * Documento
+   ================================================ ======================== * /
+
+/ **
+ * 1. Corrija la altura de la línea en todos los navegadores.
+ * 2. Evite los ajustes de tamaño de fuente después de cambios de orientación en iOS.
+ * /
+
+html {
+  altura de línea: 1,15; / * 1 * /
+  -webkit-text-size-ajuste: 100%; / * 2 * /
+}
+
+/ * Secciones
+   ================================================ ======================== * /
+
+/ **
+ * Eliminar el margen en todos los navegadores.
+ * /
+
+cuerpo {
+  margen: 0;
+}
+
+/ **
+ * Renderiza el elemento `main` de forma coherente en IE.
+ * /
+
+principal {
+  bloqueo de pantalla;
+}
+
+/ **
+ * Corrija el tamaño de fuente y el margen en los elementos `h1` dentro de la` sección` y
+ * Contextos de ʻartículo` en Chrome, Firefox y Safari.
+ * /
+
+h1 {
+  tamaño de fuente: 2em;
+  margen: 0.67em 0;
+}
+
+/ * Agrupar contenido
+   ================================================ ======================== * /
+
+/ **
+ * 1. Agregue el tamaño de caja correcto en Firefox.
+ * 2. Muestre el desbordamiento en Edge e IE.
+ * /
+
+hr {
+  tamaño de caja: caja de contenido; / * 1 * /
+  altura: 0; / * 1 * /
+  desbordamiento: visible; / * 2 * /
+}
+
+/ **
+ * 1. Corrija la herencia y la escala del tamaño de fuente en todos los navegadores.
+ * 2. Corrija el tamaño de la fuente "em" en todos los navegadores.
+ * /
+
+pre {
+  familia de fuentes: monoespacio, monoespacio; / * 1 * /
+  tamaño de fuente: 1em; / * 2 * /
+}
+
+/ * Semántica a nivel de texto
+   ================================================ ======================== * /
+
+/ **
+ * Elimina el fondo gris de los enlaces activos en IE 10.
+ * /
+
+un {
+  color de fondo: transparente;
+}
+
+/ **
+ * 1. Elimina el borde inferior en Chrome 57-
+ * 2. Agregue la decoración de texto correcta en Chrome, Edge, IE, Opera y Safari.
+ * /
+
+abbr [título] {
+  border-bottom: ninguno; / * 1 * /
+  decoración de texto: subrayado; / * 2 * /
+  decoración de texto: subrayado punteado; / * 2 * /
+}
+
+/ **
+ * Agregue el peso de fuente correcto en Chrome, Edge y Safari.
+ * /
+
+segundo,
+fuerte {
+  font-weight: negrita;
+}
+
+/ **
+ * 1. Corrija la herencia y la escala del tamaño de fuente en todos los navegadores.
+ * 2. Corrija el tamaño de la fuente "em" en todos los navegadores.
+ * /
+
+código,
+kbd,
+samp {
+  familia de fuentes: monoespacio, monoespacio; / * 1 * /
+  tamaño de fuente: 1em; / * 2 * /
+}
+
+/ **
+ * Agregue el tamaño de fuente correcto en todos los navegadores.
+ * /
+
+pequeña {
+  tamaño de fuente: 80%;
+}
+
+/ **
+ * Evitar que los elementos `sub` y` sup` afecten la altura de la línea en
+ * todos los navegadores.
+ * /
+
+sub,
+sup {
+  tamaño de fuente: 75%;
+  altura de línea: 0;
+  posición: relativa;
+  alineación vertical: línea de base;
+}
+
+sub {
+  abajo: -0.25em;
+}
+
+sup {
+  superior: -0,5em;
+}
+
+/ * Contenido incrustado
+   ================================================ ======================== * /
+
+/ **
+ * Elimine el borde de las imágenes dentro de los enlaces en IE 10.
+ * /
+
+img {
+  estilo de borde: ninguno;
+}
+
+/ * Formularios
+   ================================================ ======================== * /
+
+/ **
+ * 1. Cambie los estilos de fuente en todos los navegadores.
+ * 2. Elimine el margen en Firefox y Safari.
+ * /
+
+botón,
+entrada,
+optgroup,
+Seleccione,
+textarea {
+  font-family: heredar; / * 1 * /
+  tamaño de fuente: 100%; / * 1 * /
+  altura de línea: 1,15; / * 1 * /
+  margen: 0; / * 2 * /
+}
+
+/ **
+ * Muestra el desbordamiento en IE.
+ * 1. Muestre el desbordamiento en Edge.
+ * /
+
+botón,
+entrada {/ * 1 * /
+  desbordamiento: visible;
+}
+
+/ **
+ * Elimina la herencia de transformación de texto en Edge, Firefox e IE.
+ * 1. Elimina la herencia de transformación de texto en Firefox.
+ * /
+
+botón,
+seleccionar {/ * 1 * /
+  transformación de texto: ninguna;
+}
+
+/ **
+ * Corrija la incapacidad de diseñar tipos en los que se puede hacer clic en iOS y Safari.
+ * /
+
+botón,
+[type = "button"],
+[type = "reset"],
+[type = "enviar"] {
+  -aparición del kit de web: botón;
+}
+
+/ **
+ * Elimina el borde interior y el relleno en Firefox.
+ * /
+
+botón :: - moz-focus-inner,
+[type = "button"] :: - moz-focus-inner,
+[type = "reset"] :: - moz-focus-inner,
+[type = "submit"] :: - moz-focus-inner {
+  estilo de borde: ninguno;
+  acolchado: 0;
+}
+
+/ **
+ * Restaurar los estilos de enfoque no establecidos por la regla anterior.
+ * /
+
+botón: -moz-focusring,
+[type = "button"]: - moz-focusring,
+[type = "reset"]: - moz-focusring,
+[tipo = "enviar"]: - moz-focusring {
+  contorno: ButtonText punteado de 1px;
+}
+
+/ **
+ * Corrija el relleno en Firefox.
+ * /
+
+fieldset {
+  acolchado: 0.35em 0.75em 0.625em;
+}
+
+/ **
+ * 1. Corrija el ajuste del texto en Edge e IE.
+ * 2. Corrija la herencia de color de los elementos `fieldset` en IE.
+ * 3. Quite el relleno para que los desarrolladores no queden atrapados cuando se pongan a cero.
+ * Elementos `fieldset` en todos los navegadores.
+ * /
+
+leyenda {
+  tamaño de caja: caja de borde; / * 1 * /
+  color: heredar; / * 2 * /
+  pantalla: mesa; / * 1 * /
+  ancho máximo: 100%; / * 1 * /
+  acolchado: 0; / * 3 * /
+  espacio en blanco: normal; / * 1 * /
+}
+
+/ **
+ * Agregue la alineación vertical correcta en Chrome, Firefox y Opera.
+ * /
+
+Progreso {
+  alineación vertical: línea de base;
+}
+
+/ **
+ * Elimina la barra de desplazamiento vertical predeterminada en IE 10+.
+ * /
+
+textarea {
+  desbordamiento: automático;
+}
+
+/ **
+ * 1. Agregue el tamaño de caja correcto en IE 10.
+ * 2. Quite el relleno en IE 10.
+ * /
+
+[type = "casilla de verificación"],
+[type = "radio"] {
+  tamaño de caja: caja de borde; / * 1 * /
+  acolchado: 0; / * 2 * /
+}
+
+/ **
+ * Corrija el estilo del cursor de los botones de incremento y decremento en Chrome.
+ * /
+
+[type = "number"] :: - webkit-inner-spin-button,
+[type = "number"] :: - webkit-external-spin-button {
+  altura: auto;
+}
+
+/ **
+ * 1. Corrija la apariencia extraña en Chrome y Safari.
+ * 2. Corrija el estilo del contorno en Safari.
+ * /
+
+[type = "buscar"] {
+  -aparición del kit web: campo de texto; / * 1 * /
+  desplazamiento de contorno: -2px; / * 2 * /
+}
+
+/ **
+ * Elimine el relleno interior en Chrome y Safari en macOS.
+ * /
+
+[type = "search"] :: - webkit-search-decoration {
+  -aparición del kit de web: ninguna;
+}
+
+/ **
+ * 1. Corrija la incapacidad de diseñar tipos en los que se puede hacer clic en iOS y Safari.
+ * 2. Cambie las propiedades de la fuente a "heredar" en Safari.
+ * /
+
+:: - webkit-file-upload-button {
+  -aparición del kit de web: botón; / * 1 * /
+  fuente: heredar; / * 2 * /
+}
+
+/ * Interactivo
+   ================================================ ======================== * /
+
+/ *
+ * Agregue la pantalla correcta en Edge, IE 10+ y Firefox.
+ * /
+
+detalles {
+  bloqueo de pantalla;
+}
+
+/ *
+ * Agregue la pantalla correcta en todos los navegadores.
+ * /
+
+resumen {
+  pantalla: elemento de lista;
+}
+
+/ * Misc
+   ================================================ ======================== * /
+
+/ **
+ * Agregue la pantalla correcta en IE 10+.
+ * /
+
+modelo {
+  pantalla: ninguna;
+}
+
+/ **
+ * Agregue la pantalla correcta en IE 10.
+ * /
+
+[oculto] {
+  pantalla: ninguna;
+}
+ /****************** FIN DE NORMALIZECSS ******************/
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: boroto; sans-serif;
+
+}
+
+ /****************** HEADER ******************/
+
+ .oa-header{
+    padding: 30px 0;
+ }
+
+    .oa-header__content{ 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1170px;
+      margin-left: auto;
+      margin-right: auto; 
+
+    }
+
+        .oa-header__litle{
+          font-size: 25px;
+          margin: 0;
+
+        }
+
+            .oa-header__navigation{
+              display: flex;
+              text-align: center;
+            }
+
+              .oa-header__search{
+                font-size: 20px;
+                cursor: pointer;
+                color: red;
+                background-color: transparent;
+                border: none;
+
+              }
+
+ /****************** LOGO ******************/
+
+  .oa-logo{
+    text-decoration: none;
+    color: green;
+  }
+
+ /****************** MENU ******************/
+
+ .oa-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+ }
+
+    .oa-menu__link{
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
+      padding: 5px 10px;
+      font-size: 15px;
+
+    }
+
+/****************** BANNER ******************/
+
+.oa-banner{
+  .height: 400px;
+}
+
+  .oa-banner__item{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/esfuerzo.jpeg");
+    background-size: cover;
+    background-position: center button;
+    
+  }
+
+      .oa-banner__title{
+         font-family: 'Petit Formal Script', cursiva;
+          font-weight: 700;
+          padding: 200px 50px;
+      } 
+          .oa-menu__link-icons{
+             text-decoration: none; 
+             font-size: 20px;
+             align-items: center;
+             text-align: center;
+             list-style: none;
+             padding: 15px 10px;
+
+          }
+
+                .oa-header__socials{
+               list-style: none;
+               font-size: 20px;
+               display: flex;
+
+              }
+                .oa-header__search{
+      
+                    align-items: center;
+                    background-color: transparent;
+                    justify-content: space-between;
+                    text-align: center;
+                   border: none;
+                  }
+
+
+
+
+    .oa-services{
+    padding: 80px 0px;
+    background-color: yellow;
+    scroll-margin-top: 88px;
+
+  } 
+    .oa-services__content{
+      max-width: 1170px;
+      margin-left:auto;
+      margin-right: auto;
+    } 
+      .oa-services__title{
+        text-align: center;
+        font-size: 30px;
+
+      }
+        .oa-services__description{
+          text-align: center;
+        }
+          .oa-services__list{
+
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+
+          }
+            .oa-services__item{
+              text-align: center;
+              background-color: white;
+              padding: 20px 10px;
+              font-size: 19px;
+            }
+              .oa-services__icon{
+                display: inline-flex;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: yellow;
+                font-size: 30px;
+
+
+              }
+                .oa-services__subtitle{
+                  text-transform: uppercase;
+                }
+                  .oa-services__link{
+                    font-weight: 700;
+                    color: #000;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                  }
+                  .oa-services__foto{
+                    border-radius: 10%;
+                  }
+                    .icon-services{
+                      font-size: 29px;
+                    }
+
+
+
+/* STATS STYLES */
+
+  .oa-stats{
+    padding: 60px 0;
+    background-color: white;
+    
+  }
+
+    .oa-stats__content{
+      max-width: 1170px;
+      margin-right: auto;
+      margin-left: auto;
+   
+
+
+    }
+
+      .oa-stats__title{
+        font-size: 30px;
+
+      }
+
+        .oa-stats__list{
+          padding: 0;
+          margin: 0 auto;
+          list-style: none;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr );
+          grid-gap: 30px;
+          text-align: center;
+
+        }
+
+          .oa-stats__item{
+            background-color: white;
+            padding: 20px 30px;
+
+
+          }
+          .oa-stats__item:after{
+            content: "  ";
+            display: block;
+            height: 3px;
+            width: 50px;
+            margin:20px auto;
+            background-color: black;
+          }
+
+          .oa-stats__image{
+           width: 100%;
+          }
+
+
+          /****************** SECTION STYLES ******************/
+
+.oa-section{
+  padding: 0px;
+  text-decoration: none;
+  margin: 0px;
+  margin-top: 5px;
+  }
+
+  .oa-section_second{
+  padding: 10px;
+  text-decoration: none;
+  margin: 0px;
+  }
+
+    .oa-section__content{
+      max-width: 1170px;
+      margin-right: auto;
+      margin-left: auto;
+      }
+
+          .oa-input{
+           font-size: 30px;
+           }
+
+
+/****************** LASTS-MINUTE STYLES  ******************/
+ 
+ .oa-lasts-new{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  display: flex; 
+  } 
+
+    .oa-last-new__item{
+      width: 32%;
+      display: flex;     
+      }
+
+/****************** LAST-MINUTE STYLES ******************/
+
+    .oa-last-new__copy{
+      text-decoration: none;
+      line-height: 1.2;
+      text-align: center;
+      }
+
+    .oa-last-new__image{
+      width: 100%;
+      }
+
+
+
+          /***********************  FOOTER STYLES ********************** */
+ .oa-footer{
+
+  position: relative;  
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto; 
+ }
+
+    .oa-footer__content{
+     
+      margin-right: auto;
+      margin-left: auto;  
+      justify-content: space-between;
+      }
+
+      .oa-footer__navigation{
+
+      }
+
+        .oa-footer__menu{
+          background: white;
+          list-style: none;
+          margin: 10px;
+          display: flex;
+          margin-right: auto;
+          margin-left: auto; 
+          text-align: center;
+          }
+
+              .oa-footer__column{               
+                margin-right: auto;
+                margin-left: auto;
+                padding: 10px;
+                }
+
+                    .oa-footer__link{                     
+                      color: white;
+                      display: block;
+                      padding: 10px 80px;
+                      text-decoration: none;
+                      align-items: center; 
+                      text-align: center;
+                      margin-right: auto;
+                      margin-left: auto;
+                      }
+
+                                  .oa-footer__menu__link{
+                                    text-decoration: none;
+                                    color: black;                         
+                                    }
+
+                                    
+                                    .oa-footer__logo{
+                                    color: green;
+                                    font-size: 30px;
+                                    width: 250px;
+                                    padding: 5px 600px;
+                                    border-bottom: solid 2px ;
+                                    margin-right: auto;
+                                    margin-left: auto;
+                                    text-align: center;
+                                    justify-content: space-between;
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    }
+
+                                     .oa-footer__text{
+                                          color:black;
+                                          text-align: center;
+                                          font-size: 14px;
+                                          margin-right: auto;
+                                          margin-left: auto;
+                                          }    
+
+                                        .oa-footer__copy{
+                                         font-size: 14px;
+                                         text-align: center;
+                                          }
+
+                                        .oa-footer__copy__dates{
+                                          text-align: center;
+                                          font-size: 14px;
+                                           }
