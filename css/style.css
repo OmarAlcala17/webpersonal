@@ -450,20 +450,33 @@ body {
 
 /**************************** BANNER HEADER ****************************/
 
-.oa-banner{
-  .height: 400px;
-}
 
-  .oa-banner__item{
-    height: 100%;
+
+  .oa-banner{
+    
     display: flex;
+    height: 500px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-image: url("../images/esfuerzo.jpeg");
+    background-image: url("../images/esfuerzo.jpg");
     background-size: cover;
     background-position: center button;
+    text-align: center;
+  }
+   .oa-banner__about{
+   
+    background-image: url("../images/omarplaya.jpg");
+    background-size: cover;
+    background-position: center button;
+
     
+  }
+
+    .oa-banner__contact{
+   
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+     background-position: center button;
   }
 
       .oa-banner__title{
@@ -471,8 +484,32 @@ body {
           font-weight: 700;
           padding: 200px 50px;
       } 
-     
 
+     .oa-banner__content{
+         height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+     }
+  .oa-banner__strong{
+            font-size: 35px;
+            display: block;
+            background-color: rgba(255,255,255,0.5);
+            padding: 5px 20px;
+            border-radius: 200px;
+            }
+          .oa-banner__text{
+            font-weight: bold;
+            display: inline-block;
+            font-size: 30px;
+            background-color: rgba(255,255,255,0.5);
+            padding: 5px 20px;
+            border-radius: 200px; 
+           
+
+            }
 
 
 
@@ -800,3 +837,70 @@ body {
                     width: 100%;
                     
                     }
+
+
+                    /* FORM-DATA STYLES */
+
+
+.form-data{
+
+  
+  max-width: 1170px;
+  scroll-margin-top: 54px;
+  }
+.user-data{
+
+    }
+   
+        .user-data__option{
+      
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+            }
+            .user-data__form{
+              background-color: red;
+              padding: 10px;
+              width: 400px;
+              margin-left: auto;
+              margin-right: auto;
+              }
+
+              input:not([id="terms-field"]), 
+              .user-data__label{
+                  color: black ;
+                  font-size: 12px;
+                   }
+      
+                          .user-data__input{
+
+                          display: block;
+                          width: 360px;
+                          box-sizing: border-box;
+                          border: none;
+                          border-radius: 4;
+                          padding: 7px;
+                          margin: 8px;
+                          -moz-appearance: none;
+                          -webkit-appearance: none;
+                          appearance: none;
+                          cursor: pointer;
+                          background-color: white;
+
+                          }
+                          .user-data__terms{
+
+                          }
+
+
+                          button{    
+                            background-color: black;
+                            color: #ffff;
+                             }
+                          textarea{
+                            height: 150px;
+                            resize: none;
+                          }
+                          .send-message{
+                            color: white;
+                          }
