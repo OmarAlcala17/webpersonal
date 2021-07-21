@@ -493,24 +493,15 @@ body {
       justify-content: center;
      
      }
-  .oa-banner__strong{
-            font-size: 35px;
+
+        .oa-banner__strong{
+            font-size: 30px;
             display: block;
             background-color: rgba(255,255,255,0.5);
             padding: 5px 20px;
             border-radius: 200px;
             }
-          .oa-banner__text{
-            font-weight: bold;
-            display: inline-block;
-            font-size: 30px;
-            background-color: rgba(255,255,255,0.5);
-            padding: 5px 20px;
-            border-radius: 200px; 
-           
-
-            }
-
+          
 
 
 
