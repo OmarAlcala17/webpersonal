@@ -358,10 +358,19 @@ body {
 
 }
 
+h2 {
+  font-size: 20px;
+
+}
+
+a{
+  text-decoration: none;
+}
  /****************************HEADER ****************************/
 
  .oa-header{
     padding: 30px 0;
+    background-color: #F1F36A;
  }
 
     .oa-header__content{ 
@@ -406,7 +415,9 @@ body {
 
   .oa-logo{
     text-decoration: none;
-    color: green;
+    color: green; 
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
  /**************************** MENU ****************************/
@@ -509,7 +520,7 @@ body {
 
     .oa-experience{
     padding: 80px 0px;
-    background-color: yellow;
+    background-color: #ac1e1e;
     
   } 
     .oa-experience__content{
@@ -518,8 +529,15 @@ body {
       margin-right: auto;
     } 
       .oa-experience__title{
-        text-align: center;
+        text-align: left;
         font-size: 30px;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+
+       
 
       }
         .oa-experience__description{
@@ -569,9 +587,67 @@ body {
 
 
 
-/***************************** STATS STYLES *****************************/
+/***************************** WEBS STYLES *****************************/
 
-  .oa-stats{
+  .oa-webs{
+    padding: 60px 0;
+    background-color: white;
+    
+  }
+
+    .oa-webs__content{
+      max-width: 1170px;
+      margin-right: auto;
+      margin-left: auto;
+   
+
+
+    }
+
+      .oa-webs__title{
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+
+          }
+
+        .oa-webs__list{
+          padding: 0;
+          margin: 0 auto;
+          list-style: none;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr );
+          grid-gap: 30px;
+          text-align: center;
+
+        }
+
+          .oa-webs__item{
+            background-color: white;
+            padding: 20px 30px;
+
+
+          }
+          .oa-webs__item:after{
+            content: "  ";
+            display: block;
+            height: 3px;
+            width: 50px;
+            margin:20px auto;
+            background-color: black;
+          }
+
+          .oa-webs__image{
+           width: 100%;
+          }
+
+
+/***************************** ABOUT STYLES *****************************/
+
+ .oa-stats{
     padding: 60px 0;
     background-color: white;
     
@@ -587,7 +663,15 @@ body {
     }
 
       .oa-stats__title{
-        font-size: 30px;
+        display: none;
+        text-align: left;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+
 
       }
 
@@ -603,7 +687,7 @@ body {
         }
 
           .oa-stats__item{
-            background-color: white;
+            background-color: #338317;
             padding: 20px 30px;
 
 
@@ -617,9 +701,21 @@ body {
             background-color: black;
           }
 
-          .oa-stats__image{
-           width: 100%;
+          .oa-stats__number{
+            font-size: 60px;
+            display: block;
+            color: white;
           }
+
+            .oa-stats__copy{
+                font-size: 15px;
+                display: block;
+                color: white;
+
+
+
+            }
+
 
 
           /**************************** SECTION STYLES ****************************/
@@ -644,8 +740,13 @@ body {
       }
 
           .oa-input{
-           font-size: 30px;
-           }
+           font-size: 20px;
+           color: white;
+           background-color: black;
+           text-decoration: none;
+           display: inline-block;
+           padding: 5px 10px;
+                    }
 
 
 /**************************** PROYECTS STYLES  ****************************/
@@ -675,6 +776,67 @@ body {
       width: 100%;
       }
 
+/***************************** VIDEOS *****************************/
+.oa-videos{
+   padding: 30px 0;
+    display: flex;
+}
+.oa-videos__content{
+     max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.oa-videos__title{
+  text-align: center;
+  font-size: 30px;
+
+}
+.oa-videos__menu{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+
+}
+.oa-videos__link{
+          color: #000;
+          text-decoration: none;
+          display: block;
+          padding: 5px 10px;
+          text-transform: uppercase;
+          transition: background-color 300ms;
+          font-size: 20px;
+          font-family: 'pattaya';
+}
+/* VIDEO */
+
+.oa-video{
+  height: 600px;
+  background-image: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url("../images/tudecides.jpg");
+  background-size: cover;
+}
+.oa-video__content{
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.oa-video__link{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% ff-f font-family: fantasy;
+  color: yellow;
+  font-size: 45px;
+  text-decoration: none;
+}
 
 
           /**************************** FOOTER STYLES *****************************/
@@ -725,7 +887,7 @@ body {
                     }
 
                     .oa-footer__link{                     
-                      color: white;
+                      color: #ac1e1e;
                       display: block;
                       padding: 10px 80px;
                       text-decoration: none;
@@ -750,6 +912,10 @@ body {
                                     font-weight: 700;
                                     width: 300px;
                                     font-size: 30px;
+                                     text-decoration: none;
+                                     color: green; 
+                                     text-transform: uppercase;
+                                     font-weight: bold;
 
                                     }
 
@@ -806,7 +972,7 @@ body {
                                      cursor: pointer;
                                      }
 
-         /***********************  CARROUSEL ********************** */
+         /***********************  CARROUSEL POST ********************** */
 
   
       .carrousel__content{
@@ -829,18 +995,24 @@ body {
                     
                     }
 
+                      .oa-post__title{
+                        font-size: 30px;
+                        color: white;
+                        background-color: black;
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 5px 10px;  
+                        }
 
-                    /* FORM-DATA STYLES */
+                    /************************* FORM-DATA STYLES *******************************/
 
 
-.form-data{
+                      .form-data{
+                        max-width: 1170px;
+                        scroll-margin-top: 54px;
+                        }
 
-  
-  max-width: 1170px;
-  scroll-margin-top: 54px;
-  }
-.user-data{
-
+                      .user-data{
     }
    
         .user-data__option{
@@ -850,7 +1022,7 @@ body {
             justify-content: space-between;
             }
             .user-data__form{
-              background-color: red;
+              background-color: #F1F36A;
               padding: 10px;
               width: 400px;
               margin-left: auto;
@@ -895,3 +1067,134 @@ body {
                           .send-message{
                             color: white;
                           }
+
+  /*********************************************  CONTACT  ******************************************** */
+
+.oa-contact__section{
+  background-color: white; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+   display: flex;  
+   align-items: center;
+      
+   justify-content: space-between; 
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+ 
+
+    .oa-contact__section--content{
+      max-width: 1260px;
+      margin-right: auto;
+      margin-left: auto;
+      
+
+      
+      }
+
+          .oa-contact__section--title{
+           color: black;
+           text-align: center;
+           margin-right: auto;
+            margin-left: auto;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+           text-decoration: none;
+           display: inline-block;
+           padding: 5px 10px;
+                    }
+
+              .oa-contact__team{
+                 padding: 0;
+                 list-style: none;
+                   margin-right: auto;
+                    margin-left: auto;
+                 }
+
+
+                 /**********************************************  SKILLS ********************************************** */
+
+ .oa-skills{
+  padding: 60px 0;
+ }
+
+ .oa-skills__content{
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+ .oa-skills__title{
+  
+  font-size: 20px;
+  color: white;
+  background-color: black;
+   text-decoration: none;
+   display: inline-block;
+   padding: 5px 10px;
+   justify-content: space-between;
+ }
+
+ .oa-skills__description{
+  text-align: center;
+ }
+
+ .oa-skills__row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+  text-align: center;
+  justify-content: center;
+   align-items: center;
+
+
+ }
+.oa-skills__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+   justify-content: center;
+   align-items: center;
+
+}
+.oa-skills__image{
+
+}
+
+.oa-skills__subtitle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.oa-skills__bar{
+  background-color: #999;
+  height: 4px;
+
+}
+
+.oa-skills__bar::before{
+  content: "";
+  display: block;
+  background-color: #000;
+  height: 100%;
+}
+
+.oa-skills__bar--diseño::before{
+  width: 60%;
+}
+
+.oa-skills__bar--manejo::before{
+  width: 55%;
+}
+
+.oa-skills__bar--trabajo::before{
+  width: 85%;
+
+}
+
+.oa-skills__bar--fotografia::before{
+  width: 75%;
+
+   
